@@ -29,28 +29,29 @@ xattr -dr com.apple.quarantine "/Applications/Brew GUI.app"
 
 Updates arrive with `brew upgrade`. The cask is updated automatically by Brew GUI's release script.
 
-## WinTab
+## Lineup
 
-[WinTab](https://github.com/Furcenzo/wintab) – a window switcher like Alt+Tab on Windows: ⌘Tab with window previews,
-windows from all desktops, most recently used first (English and Slovak, macOS 15 or later).
+[Lineup](https://github.com/Furcenzo/lineup) (formerly WinTab) – a window switcher like Alt+Tab on Windows: ⌘Tab
+with window previews, windows from all desktops, most recently used first (English and Slovak, macOS 15 or later).
 
 ```bash
-brew install --cask furcenzo/tap/wintab
+brew install --cask furcenzo/tap/lineup
 ```
 
 Or in a Brewfile:
 
 ```ruby
 tap "furcenzo/tap"
-cask "furcenzo/tap/wintab", trusted: true
+cask "furcenzo/tap/lineup", trusted: true
 ```
 
-On the first start WinTab asks for the Accessibility permission (required) and Screen & System Audio Recording
+On the first start Lineup asks for the Accessibility permission (required) and Screen & System Audio Recording
 (optional, for window previews). It is not notarized by Apple either – if macOS refuses to open it, use
 **Open Anyway** in **System Settings → Privacy & Security**, or run:
 
 ```bash
-xattr -dr com.apple.quarantine "/Applications/WinTab.app"
+xattr -dr com.apple.quarantine "/Applications/Lineup.app"
 ```
 
-Updates arrive with `brew upgrade`. The cask is updated automatically by WinTab's release script.
+Updates arrive with `brew upgrade`. The cask is updated automatically by Lineup's release script.
+The old `wintab` cask was renamed: `brew upgrade` moves existing WinTab installations to `lineup`.
