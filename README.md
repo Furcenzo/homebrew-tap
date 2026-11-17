@@ -15,8 +15,10 @@ Or in a Brewfile:
 
 ```ruby
 tap "furcenzo/tap"
-cask "brew-gui"
+cask "furcenzo/tap/brew-gui", trusted: true
 ```
+
+(Homebrew only loads casks from third-party taps that you trust; installing by the full name, as above, trusts the cask.)
 
 The app is not notarized by Apple, so macOS blocks its first launch. Open **System Settings → Privacy & Security**
 and click **Open Anyway** next to “Brew GUI”, or run:
