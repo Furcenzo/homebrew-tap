@@ -1,6 +1,6 @@
 cask "wintab" do
-  version "0.1.1"
-  sha256 "0911ff69baba168b10cfb516614493c5f984f86dc2d1913a1a4cd03cc6ccb2e2"
+  version "0.1.2"
+  sha256 "15c13e9caea702211a67c95508d686c8201c0923d0c81b8547ca46f921174080"
 
   url "https://github.com/Furcenzo/wintab/releases/download/v#{version}/WinTab-#{version}.zip"
   name "WinTab"
