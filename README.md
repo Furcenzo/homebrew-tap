@@ -54,4 +54,5 @@ xattr -dr com.apple.quarantine "/Applications/Lineup.app"
 ```
 
 Updates arrive with `brew upgrade`. The cask is updated automatically by Lineup's release script.
-The old `wintab` cask was renamed: `brew upgrade` moves existing WinTab installations to `lineup`.
+The old `wintab` cask was renamed. Coming from WinTab, run `brew install --cask furcenzo/tap/lineup` once: it replaces
+the WinTab installation (Homebrew trusts casks from this tap by name, so `brew upgrade` alone skips the renamed one).
