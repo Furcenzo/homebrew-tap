@@ -28,3 +28,29 @@ xattr -dr com.apple.quarantine "/Applications/Brew GUI.app"
 ```
 
 Updates arrive with `brew upgrade`. The cask is updated automatically by Brew GUI's release script.
+
+## WinTab
+
+[WinTab](https://github.com/Furcenzo/wintab) – a window switcher like Alt+Tab on Windows: ⌘Tab with window previews,
+windows from all desktops, most recently used first (English and Slovak, macOS 15 or later).
+
+```bash
+brew install --cask furcenzo/tap/wintab
+```
+
+Or in a Brewfile:
+
+```ruby
+tap "furcenzo/tap"
+cask "furcenzo/tap/wintab", trusted: true
+```
+
+On the first start WinTab asks for the Accessibility permission (required) and Screen & System Audio Recording
+(optional, for window previews). It is not notarized by Apple either – if macOS refuses to open it, use
+**Open Anyway** in **System Settings → Privacy & Security**, or run:
+
+```bash
+xattr -dr com.apple.quarantine "/Applications/WinTab.app"
+```
+
+Updates arrive with `brew upgrade`. The cask is updated automatically by WinTab's release script.
