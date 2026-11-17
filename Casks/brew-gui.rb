@@ -23,9 +23,9 @@ cask "brew-gui" do
   ]
 
   caveats <<~EOS
-    Brew GUI is not notarized by Apple, so macOS blocks its first launch.
-    Open System Settings → Privacy & Security and click "Open Anyway",
-    or run:
+    Brew GUI is not notarized by Apple, so macOS may refuse to open it.
+    If it does, open System Settings → Privacy & Security and click
+    "Open Anyway", or run:
       xattr -dr com.apple.quarantine "#{appdir}/Brew GUI.app"
   EOS
 end
