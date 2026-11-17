@@ -1,6 +1,6 @@
 cask "brew-gui" do
-  version "0.3.1"
-  sha256 "53a71dc20a90f9b561c05967b4331a92baf473f7dfac6f50546746c960d7cf6a"
+  version "0.4.0"
+  sha256 "120016389870bc7fada519a1f065e82d4a32c9e0da1a22a6109cb9b9c50b436c"
 
   url "https://github.com/Furcenzo/brew-gui/releases/download/v#{version}/Brew-GUI-#{version}.zip"
   name "Brew GUI"
