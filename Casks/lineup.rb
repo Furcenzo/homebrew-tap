@@ -1,6 +1,6 @@
 cask "lineup" do
   version "0.2.0"
-  sha256 "0000000000000000000000000000000000000000000000000000000000000000"
+  sha256 "ed830b9fd5658de9f2e44f437d472d0bdac4227afac49ad6d5ab6fbf0d473807"
 
   url "https://github.com/Furcenzo/lineup/releases/download/v#{version}/Lineup-#{version}.zip"
   name "Lineup"
