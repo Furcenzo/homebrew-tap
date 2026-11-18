@@ -1,6 +1,6 @@
 cask "roundhouse" do
-  version "0.1.0"
-  sha256 "261dbe558b717ac503043e7ad10561f517816d05f152856f16ba4930a7b4cb3a"
+  version "0.1.1"
+  sha256 "6d3eb6120230a0918849638a339ec244c8b16e597ea4844956ce455a229edfaa"
 
   url "https://github.com/Furcenzo/roundhouse/releases/download/v#{version}/Roundhouse-#{version}.zip"
   name "Roundhouse"
