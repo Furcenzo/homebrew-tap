@@ -56,3 +56,29 @@ xattr -dr com.apple.quarantine "/Applications/Lineup.app"
 Updates arrive with `brew upgrade`. The cask is updated automatically by Lineup's release script.
 The old `wintab` cask was renamed. Coming from WinTab, run `brew install --cask furcenzo/tap/lineup` once: it replaces
 the WinTab installation (Homebrew trusts casks from this tap by name, so `brew upgrade` alone skips the renamed one).
+
+## Roundhouse
+
+[Roundhouse](https://github.com/Furcenzo/roundhouse) – a connection launcher: one list of servers and devices, a search
+panel on ⌥Space, and SSH, RDP, VNC, web interfaces and WinBox open in the right app (English and Slovak, macOS 15 or
+later).
+
+```bash
+brew install --cask furcenzo/tap/roundhouse
+```
+
+Or in a Brewfile:
+
+```ruby
+tap "furcenzo/tap"
+cask "furcenzo/tap/roundhouse", trusted: true
+```
+
+It is not notarized by Apple either – if macOS refuses to open it, use **Open Anyway** in
+**System Settings → Privacy & Security**, or run:
+
+```bash
+xattr -dr com.apple.quarantine "/Applications/Roundhouse.app"
+```
+
+Updates arrive with `brew upgrade`. The cask is updated automatically by Roundhouse's release script.
