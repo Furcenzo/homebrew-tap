@@ -82,3 +82,29 @@ xattr -dr com.apple.quarantine "/Applications/Roundhouse.app"
 ```
 
 Updates arrive with `brew upgrade`. The cask is updated automatically by Roundhouse's release script.
+
+## Stowaway
+
+[Stowaway](https://github.com/Furcenzo/stowaway) – a menu bar manager for macOS 27: keep only the icons you want in the
+menu bar and open the others from a bar under its suitcase icon (English and Slovak, macOS 27 or later).
+
+```bash
+brew install --cask furcenzo/tap/stowaway
+```
+
+Or in a Brewfile:
+
+```ruby
+tap "furcenzo/tap"
+cask "furcenzo/tap/stowaway", trusted: true
+```
+
+On the first start Stowaway asks for the Accessibility permission. It must run from /Applications. It is not
+notarized by Apple either – if macOS refuses to open it, use **Open Anyway** in
+**System Settings → Privacy & Security**, or run:
+
+```bash
+xattr -dr com.apple.quarantine "/Applications/Stowaway.app"
+```
+
+Updates arrive with `brew upgrade`. The cask is updated automatically by Stowaway's release script.
