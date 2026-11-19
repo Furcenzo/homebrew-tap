@@ -1,6 +1,6 @@
 cask "stowaway" do
-  version "0.1.0"
-  sha256 "6a23cf24ed4a39fd76632c3f605bba30b725344bfbf2adc84af872f89c315892"
+  version "0.1.1"
+  sha256 "f5b1218a69ade7cdfdfaab6ecd0e92a1efa531754691c1da80179d1536b7247b"
 
   url "https://github.com/Furcenzo/stowaway/releases/download/v#{version}/Stowaway-#{version}.zip"
   name "Stowaway"
