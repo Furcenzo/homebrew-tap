@@ -108,3 +108,29 @@ xattr -dr com.apple.quarantine "/Applications/Stowaway.app"
 ```
 
 Updates arrive with `brew upgrade`. The cask is updated automatically by Stowaway's release script.
+
+## Pointsman
+
+[Pointsman](https://github.com/Furcenzo/pointsman) – a menu bar app for developers of Mac apps: which of your apps run as
+the installed release and which as the development build, one-click switching, and the development services (Docker VM,
+containers, local servers, simulators) with their memory (English and Slovak, macOS 15 or later).
+
+```bash
+brew install --cask furcenzo/tap/pointsman
+```
+
+Or in a Brewfile:
+
+```ruby
+tap "furcenzo/tap"
+cask "furcenzo/tap/pointsman", trusted: true
+```
+
+It needs no permissions. It is not notarized by Apple either – if macOS refuses to open it, use **Open Anyway** in
+**System Settings → Privacy & Security**, or run:
+
+```bash
+xattr -dr com.apple.quarantine "/Applications/Pointsman.app"
+```
+
+Updates arrive with `brew upgrade`. The cask is updated automatically by Pointsman's release script.
