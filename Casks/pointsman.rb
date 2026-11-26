@@ -1,6 +1,6 @@
 cask "pointsman" do
   version "0.1.0"
-  sha256 "d40deb5d4dc1f3a799f0429974c0c0d6c8f62e1fa1c25dc28094f5cf9f940bdd"
+  sha256 "598dbfcaf69dc749c25bacfeca785c2057261ff4b9b6c497d85f5e8f85c649ff"
 
   url "https://github.com/Furcenzo/pointsman/releases/download/v#{version}/Pointsman-#{version}.zip"
   name "Pointsman"
